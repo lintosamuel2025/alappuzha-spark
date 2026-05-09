@@ -82,7 +82,7 @@ function Hero() {
         <motion.div initial="hidden" animate="show" variants={fadeUp} className="max-w-4xl">
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs text-white/80">
             <span className="size-2 rounded-full bg-cyan-glow pulse-dot" />
-            <span>Based in Alappuzha · Serving Globally</span>
+            <span>Nooranad, Alappuzha · Your Security Is Our Vision</span>
           </div>
           <h1 className="mt-6 text-5xl md:text-7xl font-bold leading-[1.05] text-balance">
             Devalokam Systems:<br />
@@ -243,19 +243,20 @@ function About() {
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeUp}>
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">About Us</div>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-balance">
-            From the backwaters of Alappuzha to boardrooms worldwide.
+            From Nooranad, Alappuzha — securing the everyday for over a decade.
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            Devalokam Systems was founded with one belief: that high-end technology should
-            feel approachable. We bridge the gap between enterprise-grade systems and the
-            people who use them every day — students, founders, families, and field teams.
+            Devalokam Systems is a one-stop place for all technology solutions. We address
+            the rapidly expanding need for next-generation tech that helps and protects
+            people in their day-to-day life — from home setups to business infrastructure.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Our engineers blend years of hardware expertise with modern remote tooling, so
-            whether you're across the street or across the ocean, help is one call away.
+            Our clients' satisfaction is at the heart of our business, and our engineers
+            blend years of hardware expertise with modern remote tooling — so whether you're
+            across the street or across the ocean, help is one call away.
           </p>
           <div className="mt-8 flex items-center gap-3 text-sm text-foreground/80">
-            <MapPin className="size-4 text-accent" /> Headquartered in Alappuzha, Kerala
+            <MapPin className="size-4 text-accent" /> Building No. 179, Near CS Stores, Mattappally, Nooranad, Kerala 690504
           </div>
         </motion.div>
 
@@ -403,8 +404,9 @@ function ContactForm() {
           </p>
           <ul className="mt-8 space-y-3 text-sm">
             <li className="flex items-center gap-3"><Phone className="size-4 text-accent" /> {PHONE_PRIMARY} · {PHONE_SECONDARY}</li>
-            <li className="flex items-center gap-3"><Mail className="size-4 text-accent" /> hello@devalokamsystems.com</li>
-            <li className="flex items-center gap-3"><MapPin className="size-4 text-accent" /> Alappuzha, Kerala, India</li>
+            <li className="flex items-center gap-3"><Mail className="size-4 text-accent" /> admin@devalokamsystems.com</li>
+            <li className="flex items-center gap-3"><MapPin className="size-4 text-accent" /> Bldg No. 179, Mattappally, Nooranad, Kerala 690504</li>
+            <li className="flex items-center gap-3"><Clock className="size-4 text-accent" /> Onsite: Mon–Sat 9 AM–7 PM · Sun 11 AM–7 PM</li>
           </ul>
         </motion.div>
         <motion.form initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeUp}
@@ -511,7 +513,7 @@ function Footer() {
           </div>
           <span className="font-display font-bold text-white">Devalokam Systems</span>
         </div>
-        <div>© {new Date().getFullYear()} Devalokam Systems · Alappuzha, Kerala</div>
+        <div>© {new Date().getFullYear()} Devalokam Systems · Nooranad, Alappuzha · Your Security Is Our Vision</div>
       </div>
     </footer>
   );
