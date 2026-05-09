@@ -5,6 +5,7 @@ import {
   Monitor, Wrench, Briefcase, Globe2, MessageCircle, Download,
   ShieldCheck, Clock, MapPin, Mail, Phone, ArrowRight, Cpu,
   Laptop, Server, HardDrive, Printer, Network, Sparkles, CheckCircle2,
+  Quote, Star,
 } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import { Button } from "@/components/ui/button";
@@ -34,6 +35,7 @@ function Nav() {
     ["Support", "#support"],
     ["Products", "#products"],
     ["Toolbox", "#toolbox"],
+    ["Stories", "#testimonials"],
     ["Contact", "#contact"],
   ];
   return (
@@ -431,6 +433,69 @@ function ContactForm() {
             Request Consultation <ArrowRight className="size-4 ml-2" />
           </Button>
         </motion.form>
+      </div>
+    </section>
+  );
+}
+
+
+const testimonials = [
+  {
+    quote: "Devalokam set up our entire office network and Office 365 migration without a single hour of downtime. The late-night window was a lifesaver.",
+    name: "Rahul Menon",
+    role: "Operations Lead, Coastal Logistics",
+  },
+  {
+    quote: "I called at 11 PM with a dead laptop the night before a deadline. They were on screen in minutes and had me back up before midnight.",
+    name: "Anjali Pillai",
+    role: "Architect, Kochi",
+  },
+  {
+    quote: "Honest pricing, expert advice, and they actually pick up the phone. Our go-to IT partner across three branches.",
+    name: "Suresh Kumar",
+    role: "Director, Backwater Resorts",
+  },
+];
+
+function Testimonials() {
+  return (
+    <section id="testimonials" className="py-24 md:py-32 bg-background">
+      <div className="mx-auto max-w-7xl px-6">
+        <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeUp}
+          className="max-w-2xl">
+          <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Client Stories</div>
+          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-balance">
+            Trusted by businesses across <span className="text-midnight">Kerala and beyond.</span>
+          </h2>
+          <p className="mt-4 text-muted-foreground text-lg">
+            Real words from clients who count on us when systems can't fail.
+          </p>
+        </motion.div>
+
+        <div className="mt-14 grid md:grid-cols-3 gap-6">
+          {testimonials.map((t, i) => (
+            <motion.figure key={t.name}
+              initial="hidden" whileInView="show" viewport={{ once: true }}
+              variants={fadeUp}
+              transition={{ delay: i * 0.08 }}
+              className="relative rounded-2xl border bg-card p-7 shadow-card hover:shadow-elegant hover:-translate-y-1 transition-all duration-500 flex flex-col"
+            >
+              <Quote className="size-8 text-accent/40" />
+              <div className="mt-3 flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, j) => (
+                  <Star key={j} className="size-4 fill-accent text-accent" />
+                ))}
+              </div>
+              <blockquote className="mt-4 text-foreground/85 leading-relaxed flex-1">
+                "{t.quote}"
+              </blockquote>
+              <figcaption className="mt-6 pt-6 border-t">
+                <div className="font-semibold">{t.name}</div>
+                <div className="text-xs text-muted-foreground mt-0.5">{t.role}</div>
+              </figcaption>
+            </motion.figure>
+          ))}
+        </div>
       </div>
     </section>
   );
