@@ -404,7 +404,7 @@ function ContactForm() {
           </p>
           <ul className="mt-8 space-y-3 text-sm">
             <li className="flex items-center gap-3"><Phone className="size-4 text-accent" /> {PHONE_PRIMARY} · {PHONE_SECONDARY}</li>
-            <li className="flex items-center gap-3"><Mail className="size-4 text-accent" /> admin@devalokamsystems.com</li>
+            <li className="flex items-center gap-3"><Mail className="size-4 text-accent" /> devalokamsystems@gmail.com</li>
             <li className="flex items-center gap-3"><MapPin className="size-4 text-accent" /> Bldg No. 179, Mattappally, Nooranad, Kerala 690504</li>
             <li className="flex items-center gap-3"><Clock className="size-4 text-accent" /> Onsite: Mon–Sat 9 AM–7 PM · Sun 11 AM–7 PM</li>
           </ul>
