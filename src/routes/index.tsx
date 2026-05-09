@@ -17,7 +17,9 @@ import { Toaster } from "@/components/ui/sonner";
 export const Route = createFileRoute("/")({ component: Index });
 
 // TODO: replace with real number
-const WHATSAPP = "919999999999";
+const WHATSAPP = "918089282351";
+const PHONE_PRIMARY = "+91 80892 82351";
+const PHONE_SECONDARY = "+91 88212 14047";
 const waLink = (msg: string) =>
   `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 
