@@ -8,6 +8,7 @@ import {
   Quote, Star,
 } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
+import logoImg from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
