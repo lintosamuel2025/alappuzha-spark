@@ -501,8 +501,8 @@ function Footer() {
     <footer className="bg-midnight text-white/70 py-12">
       <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
         <div className="flex items-center gap-2">
-          <div className="size-7 rounded-lg bg-cyan-gradient grid place-items-center">
-            <Sparkles className="size-3.5 text-midnight" />
+          <div className="size-8 rounded-full overflow-hidden bg-midnight ring-1 ring-cyan-glow/40">
+            <img src={logoImg} alt="Devalokam Systems logo" className="size-full object-cover" />
           </div>
           <span className="font-display font-bold text-white">Devalokam Systems</span>
         </div>
