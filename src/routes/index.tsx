@@ -435,7 +435,7 @@ function ContactForm() {
 
 const testimonials = [
   {
-    quote: "Devalokam set up our entire office network and Office 365 migration without a single hour of downtime. The late-night window was a lifesaver.",
+    quote: "Devalokam set up our entire office network and Office 365 migration without a single hour of downtime. Their 24/7 support team was a lifesaver.",
     name: "Rahul Menon",
     role: "Operations Lead, Coastal Logistics",
   },
