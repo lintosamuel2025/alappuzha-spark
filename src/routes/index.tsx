@@ -112,8 +112,8 @@ function Hero() {
             {[
               ["12+", "Years experience"],
               ["1.2k+", "Systems serviced"],
-              ["24/7", "Remote reach"],
-              ["7 PM–4 AM", "Late-night desk"],
+              ["24/7", "Technical support"],
+              ["100%", "Remote reach"],
             ].map(([k, v]) => (
               <div key={v} className="glass rounded-xl p-4">
                 <div className="font-display text-2xl font-bold text-cyan-glow">{k}</div>
