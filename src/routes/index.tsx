@@ -44,8 +44,8 @@ function Nav() {
       <div className="mx-auto max-w-7xl px-6 py-4">
         <div className="glass-dark rounded-2xl px-5 py-3 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-2">
-            <div className="size-8 rounded-lg bg-cyan-gradient grid place-items-center shadow-glow">
-              <Sparkles className="size-4 text-midnight" />
+            <div className="size-9 rounded-full overflow-hidden bg-midnight shadow-glow ring-1 ring-cyan-glow/40">
+              <img src={logoImg} alt="Devalokam Systems logo" className="size-full object-cover" />
             </div>
             <span className="font-display font-bold text-white tracking-tight">
               Devalokam<span className="text-cyan-glow">.</span>
