@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useEffect, useState } from "react";
 import {
   Monitor, Wrench, Briefcase, Globe2, MessageCircle, Download,
@@ -21,9 +21,10 @@ const WHATSAPP = "919999999999";
 const waLink = (msg: string) =>
   `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
 
-const fadeUp = {
+const EASE = [0.22, 1, 0.36, 1] as const;
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE as unknown as number[] } },
 };
 
 function Nav() {
