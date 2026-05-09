@@ -128,14 +128,6 @@ function Hero() {
 }
 
 function LiveSupport() {
-  const [now, setNow] = useState(new Date());
-  useEffect(() => {
-    const t = setInterval(() => setNow(new Date()), 1000);
-    return () => clearInterval(t);
-  }, []);
-  const h = now.getHours();
-  const active = h >= 19 || h < 4;
-
   return (
     <section id="support" className="relative bg-midnight text-white py-20 md:py-28 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-40" />
@@ -146,25 +138,25 @@ function LiveSupport() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-cyan-glow/15 border border-cyan-glow/30 px-3 py-1 text-xs font-semibold text-cyan-glow uppercase tracking-wider">
-                <span className={`size-2 rounded-full ${active ? "bg-cyan-glow pulse-dot" : "bg-white/40"}`} />
-                {active ? "Active now" : "Opens at 7:00 PM"}
+                <span className="size-2 rounded-full bg-cyan-glow pulse-dot" />
+                Available now
               </div>
               <h2 className="mt-4 text-4xl md:text-5xl font-bold text-balance">
-                Late-Night <span className="bg-cyan-gradient bg-clip-text text-transparent">Expert Support</span>
+                24/7 <span className="bg-cyan-gradient bg-clip-text text-transparent">Technical Support</span>
               </h2>
               <p className="mt-4 text-white/70 max-w-xl">
-                When the world goes quiet, we go to work. Dedicated remote troubleshooting
-                across hardware, networks, security and software — anywhere on the planet.
+                Round-the-clock remote troubleshooting across hardware, networks, security
+                and software — whenever you need us, wherever you are.
               </p>
               <div className="mt-6 flex flex-wrap gap-6 text-sm text-white/80">
-                <span className="flex items-center gap-2"><Clock className="size-4 text-cyan-glow" /> 7:00 PM – 4:00 AM IST</span>
+                <span className="flex items-center gap-2"><Clock className="size-4 text-cyan-glow" /> 24 hours · 7 days</span>
                 <span className="flex items-center gap-2"><Globe2 className="size-4 text-cyan-glow" /> Worldwide</span>
                 <span className="flex items-center gap-2"><ShieldCheck className="size-4 text-cyan-glow" /> Encrypted sessions</span>
               </div>
             </div>
             <div className="shrink-0">
               <a
-                href={waLink("Hi Devalokam, I need late-night support.")}
+                href={waLink("Hi Devalokam, I need technical support.")}
                 target="_blank" rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-cyan-gradient px-6 py-4 font-semibold text-midnight shadow-glow hover:scale-[1.02] transition"
               >
