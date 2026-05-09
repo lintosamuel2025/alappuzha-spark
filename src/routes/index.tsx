@@ -400,7 +400,7 @@ function ContactForm() {
             reply with a clear next step, usually within one business day.
           </p>
           <ul className="mt-8 space-y-3 text-sm">
-            <li className="flex items-center gap-3"><Phone className="size-4 text-accent" /> +91 99999 99999</li>
+            <li className="flex items-center gap-3"><Phone className="size-4 text-accent" /> {PHONE_PRIMARY} · {PHONE_SECONDARY}</li>
             <li className="flex items-center gap-3"><Mail className="size-4 text-accent" /> hello@devalokamsystems.com</li>
             <li className="flex items-center gap-3"><MapPin className="size-4 text-accent" /> Alappuzha, Kerala, India</li>
           </ul>
