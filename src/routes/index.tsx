@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion, type Variants } from "framer-motion";
-import { useEffect } from "react";
+
 import {
   Monitor, Wrench, Briefcase, Globe2, MessageCircle, Download,
   ShieldCheck, Clock, MapPin, Mail, Phone, ArrowRight, Cpu,
