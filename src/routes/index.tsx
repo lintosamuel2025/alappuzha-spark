@@ -541,6 +541,7 @@ function Index() {
       <About />
       <Products />
       <Toolbox />
+      <Testimonials />
       <ContactForm />
       <Footer />
       <FloatingWA />
